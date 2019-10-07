@@ -3,13 +3,16 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		27B812DC2347DEF600ACE76B /* GoldPrice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27B812D22347DEF600ACE76B /* GoldPrice.framework */; };
 		27B812E12347DEF600ACE76B /* GoldPriceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B812E02347DEF600ACE76B /* GoldPriceTests.swift */; };
 		27B812E32347DEF600ACE76B /* GoldPrice.h in Headers */ = {isa = PBXBuildFile; fileRef = 27B812D52347DEF600ACE76B /* GoldPrice.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		27B812EE234BE0CC00ACE76B /* Curry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27B812ED234BE0CC00ACE76B /* Curry.framework */; platformFilter = ios; };
+		27B812F0234BE11100ACE76B /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27B812EF234BE11100ACE76B /* Quick.framework */; platformFilter = ios; };
+		27B812F2234BE12500ACE76B /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27B812F1234BE12500ACE76B /* Nimble.framework */; platformFilter = ios; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +32,9 @@
 		27B812DB2347DEF600ACE76B /* GoldPriceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoldPriceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		27B812E02347DEF600ACE76B /* GoldPriceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoldPriceTests.swift; sourceTree = "<group>"; };
 		27B812E22347DEF600ACE76B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27B812ED234BE0CC00ACE76B /* Curry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Curry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		27B812EF234BE11100ACE76B /* Quick.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Quick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		27B812F1234BE12500ACE76B /* Nimble.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Nimble.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27B812EE234BE0CC00ACE76B /* Curry.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +50,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27B812F2234BE12500ACE76B /* Nimble.framework in Frameworks */,
+				27B812F0234BE11100ACE76B /* Quick.framework in Frameworks */,
 				27B812DC2347DEF600ACE76B /* GoldPrice.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -56,6 +65,7 @@
 				27B812D42347DEF600ACE76B /* GoldPrice */,
 				27B812DF2347DEF600ACE76B /* GoldPriceTests */,
 				27B812D32347DEF600ACE76B /* Products */,
+				27B812EC234BE0CC00ACE76B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,6 +94,16 @@
 				27B812E22347DEF600ACE76B /* Info.plist */,
 			);
 			path = GoldPriceTests;
+			sourceTree = "<group>";
+		};
+		27B812EC234BE0CC00ACE76B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				27B812F1234BE12500ACE76B /* Nimble.framework */,
+				27B812EF234BE11100ACE76B /* Quick.framework */,
+				27B812ED234BE0CC00ACE76B /* Curry.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
