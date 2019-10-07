@@ -13,6 +13,7 @@
 		27B812EE234BE0CC00ACE76B /* Curry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27B812ED234BE0CC00ACE76B /* Curry.framework */; platformFilter = ios; };
 		27B812F0234BE11100ACE76B /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27B812EF234BE11100ACE76B /* Quick.framework */; platformFilter = ios; };
 		27B812F2234BE12500ACE76B /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27B812F1234BE12500ACE76B /* Nimble.framework */; platformFilter = ios; };
+		27B812F4234BEA4D00ACE76B /* CurrentPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B812F3234BEA4D00ACE76B /* CurrentPrice.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,7 @@
 		27B812ED234BE0CC00ACE76B /* Curry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Curry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		27B812EF234BE11100ACE76B /* Quick.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Quick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		27B812F1234BE12500ACE76B /* Nimble.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Nimble.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		27B812F3234BEA4D00ACE76B /* CurrentPrice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentPrice.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 			children = (
 				27B812D52347DEF600ACE76B /* GoldPrice.h */,
 				27B812D62347DEF600ACE76B /* Info.plist */,
+				27B812F3234BEA4D00ACE76B /* CurrentPrice.swift */,
 			);
 			path = GoldPrice;
 			sourceTree = "<group>";
@@ -168,6 +171,7 @@
 				TargetAttributes = {
 					27B812D12347DEF600ACE76B = {
 						CreatedOnToolsVersion = 11.0;
+						LastSwiftMigration = 1100;
 					};
 					27B812DA2347DEF600ACE76B = {
 						CreatedOnToolsVersion = 11.0;
@@ -215,6 +219,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27B812F4234BEA4D00ACE76B /* CurrentPrice.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,6 +365,7 @@
 		27B812E72347DEF600ACE76B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -375,6 +381,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = nyc.pickaxe.GoldPrice;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -383,6 +390,7 @@
 		27B812E82347DEF600ACE76B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -406,6 +414,7 @@
 		27B812EA2347DEF600ACE76B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = GoldPriceTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -423,6 +432,7 @@
 		27B812EB2347DEF600ACE76B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = GoldPriceTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
