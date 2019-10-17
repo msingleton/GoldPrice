@@ -3,7 +3,7 @@
 //  GoldPrice
 //
 //  Created by Michael Singleton on 10/4/19.
-//  Copyright © 2019 Pickaxe. All rights reserved.
+//  Copyright © 2019 Pickaxe LLC. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
