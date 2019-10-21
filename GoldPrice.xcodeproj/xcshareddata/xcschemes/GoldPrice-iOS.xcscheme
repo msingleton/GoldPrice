@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "27B812D12347DEF600ACE76B"
-               BuildableName = "GoldPrice.framework"
-               BlueprintName = "GoldPrice"
+               BuildableName = "GoldPrice_iOS.framework"
+               BlueprintName = "GoldPrice-iOS"
                ReferencedContainer = "container:GoldPrice.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -61,8 +61,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "27B812D12347DEF600ACE76B"
-            BuildableName = "GoldPrice.framework"
-            BlueprintName = "GoldPrice"
+            BuildableName = "GoldPrice_iOS.framework"
+            BlueprintName = "GoldPrice-iOS"
             ReferencedContainer = "container:GoldPrice.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

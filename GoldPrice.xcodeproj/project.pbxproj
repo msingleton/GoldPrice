@@ -14,6 +14,11 @@
 		27B812F2234BE12500ACE76B /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27B812F1234BE12500ACE76B /* Nimble.framework */; platformFilter = ios; };
 		27B812F4234BEA4D00ACE76B /* CurrentPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B812F3234BEA4D00ACE76B /* CurrentPrice.swift */; };
 		27B812F62354FCF800ACE76B /* Quandl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B812F52354FCF700ACE76B /* Quandl.swift */; };
+		27B81309235E09BB00ACE76B /* GoldPrice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27B81300235E09BB00ACE76B /* GoldPrice.framework */; };
+		27B8130E235E09BB00ACE76B /* GoldPrice_tvOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B8130D235E09BB00ACE76B /* GoldPrice_tvOSTests.swift */; };
+		27B81310235E09BB00ACE76B /* GoldPrice_tvOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 27B81302235E09BB00ACE76B /* GoldPrice_tvOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		27B81317235E0B1400ACE76B /* CurrentPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B812F3234BEA4D00ACE76B /* CurrentPrice.swift */; };
+		27B81318235E0B1500ACE76B /* Quandl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B812F52354FCF700ACE76B /* Quandl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,6 +28,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 27B812D12347DEF600ACE76B;
 			remoteInfo = GoldPrice;
+		};
+		27B8130A235E09BB00ACE76B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27B812C92347DEF600ACE76B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27B812FF235E09BA00ACE76B;
+			remoteInfo = "GoldPrice-tvOS";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -37,6 +49,12 @@
 		27B812F1234BE12500ACE76B /* Nimble.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Nimble.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		27B812F3234BEA4D00ACE76B /* CurrentPrice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentPrice.swift; sourceTree = "<group>"; };
 		27B812F52354FCF700ACE76B /* Quandl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quandl.swift; sourceTree = "<group>"; };
+		27B81300235E09BB00ACE76B /* GoldPrice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GoldPrice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		27B81302235E09BB00ACE76B /* GoldPrice_tvOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GoldPrice_tvOS.h; sourceTree = "<group>"; };
+		27B81303235E09BB00ACE76B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27B81308235E09BB00ACE76B /* GoldPrice-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GoldPrice-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		27B8130D235E09BB00ACE76B /* GoldPrice_tvOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoldPrice_tvOSTests.swift; sourceTree = "<group>"; };
+		27B8130F235E09BB00ACE76B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +75,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		27B812FD235E09BA00ACE76B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27B81305235E09BB00ACE76B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27B81309235E09BB00ACE76B /* GoldPrice.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -65,6 +98,8 @@
 			children = (
 				27B812D42347DEF600ACE76B /* GoldPrice */,
 				27B812DF2347DEF600ACE76B /* GoldPriceTests */,
+				27B81301235E09BB00ACE76B /* GoldPrice-tvOS */,
+				27B8130C235E09BB00ACE76B /* GoldPrice-tvOSTests */,
 				27B812D32347DEF600ACE76B /* Products */,
 				27B812EC234BE0CC00ACE76B /* Frameworks */,
 			);
@@ -75,6 +110,8 @@
 			children = (
 				27B812D22347DEF600ACE76B /* GoldPrice.framework */,
 				27B812DB2347DEF600ACE76B /* GoldPriceTests.xctest */,
+				27B81300235E09BB00ACE76B /* GoldPrice.framework */,
+				27B81308235E09BB00ACE76B /* GoldPrice-tvOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -108,6 +145,24 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		27B81301235E09BB00ACE76B /* GoldPrice-tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				27B81302235E09BB00ACE76B /* GoldPrice_tvOS.h */,
+				27B81303235E09BB00ACE76B /* Info.plist */,
+			);
+			path = "GoldPrice-tvOS";
+			sourceTree = "<group>";
+		};
+		27B8130C235E09BB00ACE76B /* GoldPrice-tvOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				27B8130D235E09BB00ACE76B /* GoldPrice_tvOSTests.swift */,
+				27B8130F235E09BB00ACE76B /* Info.plist */,
+			);
+			path = "GoldPrice-tvOSTests";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -119,12 +174,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		27B812FB235E09BA00ACE76B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27B81310235E09BB00ACE76B /* GoldPrice_tvOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		27B812D12347DEF600ACE76B /* GoldPrice */ = {
+		27B812D12347DEF600ACE76B /* GoldPrice-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 27B812E62347DEF600ACE76B /* Build configuration list for PBXNativeTarget "GoldPrice" */;
+			buildConfigurationList = 27B812E62347DEF600ACE76B /* Build configuration list for PBXNativeTarget "GoldPrice-iOS" */;
 			buildPhases = (
 				27B812CD2347DEF600ACE76B /* Headers */,
 				27B812CE2347DEF600ACE76B /* Sources */,
@@ -135,7 +198,7 @@
 			);
 			dependencies = (
 			);
-			name = GoldPrice;
+			name = "GoldPrice-iOS";
 			productName = GoldPrice;
 			productReference = 27B812D22347DEF600ACE76B /* GoldPrice.framework */;
 			productType = "com.apple.product-type.framework";
@@ -158,6 +221,42 @@
 			productReference = 27B812DB2347DEF600ACE76B /* GoldPriceTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		27B812FF235E09BA00ACE76B /* GoldPrice-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27B81311235E09BB00ACE76B /* Build configuration list for PBXNativeTarget "GoldPrice-tvOS" */;
+			buildPhases = (
+				27B812FB235E09BA00ACE76B /* Headers */,
+				27B812FC235E09BA00ACE76B /* Sources */,
+				27B812FD235E09BA00ACE76B /* Frameworks */,
+				27B812FE235E09BA00ACE76B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "GoldPrice-tvOS";
+			productName = "GoldPrice-tvOS";
+			productReference = 27B81300235E09BB00ACE76B /* GoldPrice.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		27B81307235E09BB00ACE76B /* GoldPrice-tvOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27B81314235E09BB00ACE76B /* Build configuration list for PBXNativeTarget "GoldPrice-tvOSTests" */;
+			buildPhases = (
+				27B81304235E09BB00ACE76B /* Sources */,
+				27B81305235E09BB00ACE76B /* Frameworks */,
+				27B81306235E09BB00ACE76B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				27B8130B235E09BB00ACE76B /* PBXTargetDependency */,
+			);
+			name = "GoldPrice-tvOSTests";
+			productName = "GoldPrice-tvOSTests";
+			productReference = 27B81308235E09BB00ACE76B /* GoldPrice-tvOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -175,6 +274,12 @@
 					27B812DA2347DEF600ACE76B = {
 						CreatedOnToolsVersion = 11.0;
 					};
+					27B812FF235E09BA00ACE76B = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					27B81307235E09BB00ACE76B = {
+						CreatedOnToolsVersion = 11.0;
+					};
 				};
 			};
 			buildConfigurationList = 27B812CC2347DEF600ACE76B /* Build configuration list for PBXProject "GoldPrice" */;
@@ -190,8 +295,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				27B812D12347DEF600ACE76B /* GoldPrice */,
+				27B812D12347DEF600ACE76B /* GoldPrice-iOS */,
 				27B812DA2347DEF600ACE76B /* GoldPriceTests */,
+				27B812FF235E09BA00ACE76B /* GoldPrice-tvOS */,
+				27B81307235E09BB00ACE76B /* GoldPrice-tvOSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -205,6 +312,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		27B812D92347DEF600ACE76B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27B812FE235E09BA00ACE76B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27B81306235E09BB00ACE76B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -231,13 +352,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		27B812FC235E09BA00ACE76B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27B81317235E0B1400ACE76B /* CurrentPrice.swift in Sources */,
+				27B81318235E0B1500ACE76B /* Quandl.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27B81304235E09BB00ACE76B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27B8130E235E09BB00ACE76B /* GoldPrice_tvOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
 		27B812DE2347DEF600ACE76B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 27B812D12347DEF600ACE76B /* GoldPrice */;
+			target = 27B812D12347DEF600ACE76B /* GoldPrice-iOS */;
 			targetProxy = 27B812DD2347DEF600ACE76B /* PBXContainerItemProxy */;
+		};
+		27B8130B235E09BB00ACE76B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 27B812FF235E09BA00ACE76B /* GoldPrice-tvOS */;
+			targetProxy = 27B8130A235E09BB00ACE76B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -380,7 +523,7 @@
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = nyc.pickaxe.GoldPrice;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = GoldPrice;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -406,7 +549,7 @@
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = nyc.pickaxe.GoldPrice;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = GoldPrice;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -449,6 +592,96 @@
 			};
 			name = Release;
 		};
+		27B81312235E09BB00ACE76B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "GoldPrice-tvOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nyc.pickaxe.GoldPrice;
+				PRODUCT_NAME = GoldPrice;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 12.0;
+			};
+			name = Debug;
+		};
+		27B81313235E09BB00ACE76B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "GoldPrice-tvOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nyc.pickaxe.GoldPrice;
+				PRODUCT_NAME = GoldPrice;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 12.0;
+			};
+			name = Release;
+		};
+		27B81315235E09BB00ACE76B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "GoldPrice-tvOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "nyc.pickaxe.GoldPrice-tvOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 13.0;
+			};
+			name = Debug;
+		};
+		27B81316235E09BB00ACE76B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "GoldPrice-tvOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "nyc.pickaxe.GoldPrice-tvOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 13.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -461,7 +694,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		27B812E62347DEF600ACE76B /* Build configuration list for PBXNativeTarget "GoldPrice" */ = {
+		27B812E62347DEF600ACE76B /* Build configuration list for PBXNativeTarget "GoldPrice-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				27B812E72347DEF600ACE76B /* Debug */,
@@ -475,6 +708,24 @@
 			buildConfigurations = (
 				27B812EA2347DEF600ACE76B /* Debug */,
 				27B812EB2347DEF600ACE76B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27B81311235E09BB00ACE76B /* Build configuration list for PBXNativeTarget "GoldPrice-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27B81312235E09BB00ACE76B /* Debug */,
+				27B81313235E09BB00ACE76B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27B81314235E09BB00ACE76B /* Build configuration list for PBXNativeTarget "GoldPrice-tvOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27B81315235E09BB00ACE76B /* Debug */,
+				27B81316235E09BB00ACE76B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
