@@ -13,4 +13,7 @@ Pod::Spec.new do |spec|
   spec.source_files = "GoldPrice/**/*.{h,swift}"
 
   spec.swift_version = '5.0'
+
+  spec.ios.deployment_target = '12.0'
+  spec.tvos.deployment_target = '12.0'
 end
