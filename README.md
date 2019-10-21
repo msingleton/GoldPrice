@@ -27,7 +27,7 @@ carthage update --no-use-binaries
 
 ### CocoaPods
 
-Add the folloing to your Podfile
+Add the following to your Podfile
 
 ```
 pod 'GoldPrice'
