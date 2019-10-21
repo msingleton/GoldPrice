@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name = "GoldPrice"
-  spec.version = "0.1.3"
+  spec.version = "0.1.4"
   spec.summary = "Get realtime gold prices."
   spec.homepage = "https://pickaxe.nyc"
   spec.license = { type: 'Apache 2.0', file: 'LICENSE' }
