@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import GoldPrice_tvOS
+@testable import GoldPrice
 
 class GoldPrice_tvOSTests: XCTestCase {
 
